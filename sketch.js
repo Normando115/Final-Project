@@ -1571,3 +1571,4 @@ function artistStatement() {
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
 }
+}
