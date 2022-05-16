@@ -3,12 +3,6 @@ var heads;
 let gameState = "title";
 let canvas;
 let fr = 60;
-<<<<<<< HEAD
-
-//hanbee17
-
-=======
->>>>>>> parent of 3413bb0 (Added more gamestates/scenarios/endings)
 function preload() {
 
   heads = loadAnimation(
@@ -439,7 +433,6 @@ function gameOver() {
   text("Press R to restart", width * 0.5, height * 0.9);
   text("Press 1 to go to title page", width * 0.5, height * 0.95);
 }
-<<<<<<< HEAD
 
 function scenario1() {
   background(232, 19, 211);
@@ -1000,7 +993,7 @@ function scenario9b() {
   fill(175, 21, 209);
   text("A ", 235, 895);
   text("B ", 935, 895);
-
+}
 function scenario10b() {
   background(255, 247, 189);
   image(img4, 0, 0);
@@ -1498,27 +1491,8 @@ function scenario10f() {
   text("B ", 935, 895);
 }
 function ending7() {
-=======
-function winGame() {
->>>>>>> parent of 3413bb0 (Added more gamestates/scenarios/endings)
-  background(232, 19, 211);
-  image(img2, 0, 0);
-  fill(255, 128, 128);
-  textSize(50);
-  textAlign(CENTER);
-  text("Just another successful day at work ", width * 0.5, height * 0.1);
-    text("Good Work", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-
-  noStroke();
-  //  text("Go home crying", 220, 890);
-  //  text("Cry at work", 920, 890);
-  //  rect(200, 750, 70, 70);
-  //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
 }
+
 function artistStatement() {
   background(255, 247, 189);
   fill(0);
