@@ -247,7 +247,6 @@ text("B ", 935, 895);
 }
 
 
-
 function instructionScreen() {
   background(49, 29, 224);
   noStroke();
@@ -562,7 +561,7 @@ function scenario7() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("Customer complains about bad food ", width * 0.5, height * 0.1);
+    text("Customer complains about bad food ", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
@@ -657,183 +656,30 @@ function ending1() {
 
 function scenario2a() {
   background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
   text("scenario2a The boss tells you its time to start work", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
   text("3a Start working", 220, 990);
   text("3b Go to the bathroom and play a little longer", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
   text("A = scenario3a", 235, 895);
   text("B = scenario3b", 935, 895);
 }
 function scenario3a() {
   background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
   text("The customer wants a refill on coffee", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
   text("4a Get him the coffee", 220, 990);
   text("4b Ignore him", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
   text("A Scenario 4a", 235, 895);
   text("B Scenario 4b ", 935, 895);
 }
 function scenario4a() {
   background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
   text("Boss leaves you in charge of new coworker", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("5a Teach him the way you were taught", 220, 990);
-  text("5b Be lazy and tell him some generic stuff that he knew", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
+  text("5a Teach him properly", 220, 990);
+  text("5b tell another coworker to do it ", 920, 990);
   text("A Scenario 5a", 235, 895);
   text("B Scenario 5b", 935, 895);
-}
-function scenario5a() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("Its breaktime", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("Eat lunch", 220, 990);
-  text("Keep working ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A scenario 6a", 235, 895);
-  text("B scenario 6b", 935, 895);
-}
-function scenario6a() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("Customer doesn't know what to order", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("Reccomend him something good  ", 220, 990);
-  text("7b Tell him to ask someone else", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario7a() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("8a", 220, 990);
-  text("8b ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario8a() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("9a", 220, 990);
-  text("9b ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario9a() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("10a", 220, 990);
-  text("10b ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario10a() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("ending2", 220, 990);
-  text("ending3 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
 }
 function ending2() {
   background(232, 19, 211);
@@ -860,19 +706,19 @@ function scenario3b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("The boss doesnt want fire you so he tells you to work at their other restaurant", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
   text("4b", 220, 990);
-  text("4c ", 920, 990);
+  text("fired" ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
   text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("B keep playing on phone", 935, 895);
 }
 function scenario4b() {
   background(255, 247, 189);
@@ -880,13 +726,13 @@ function scenario4b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("You are told to bring food to tables instead of cleaning tables", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("5b", 220, 990);
-  text("5c ", 920, 990);
+  text("You are now a runner", 220, 990);
+  text("Nope I only clean ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -900,13 +746,13 @@ function scenario5b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("Its breaktime", width * 0.5, height * 0.1);
+  text("Food looks good", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Eat lunch", 220, 990);
-  text("Keep working ", 920, 990);
+  text("Wait until break", 220, 990);
+  text("eat it ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -920,13 +766,13 @@ function scenario6b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Breaktime", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("7b", 220, 990);
-  text("7c ", 920, 990);
+  text("eat", 220, 990);
+  text("work ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -940,13 +786,13 @@ function scenario7b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Customer drops all his food after paying", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("8b", 220, 990);
-  text("8c ", 920, 990);
+  text("Laugh", 220, 990);
+  text("Tell chef to make more ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -960,13 +806,13 @@ function scenario8b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Restaurant is closing ", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("9b", 220, 990);
-  text("9c ", 920, 990);
+  text("Close restaurant", 220, 990);
+  text("Leave its not your restaurant", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -974,46 +820,7 @@ function scenario8b() {
   text("A ", 235, 895);
   text("B ", 935, 895);
 }
-function scenario9b() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("10b", 220, 990);
-  text("10c ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario10b() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("8b", 220, 990);
-  text("8c ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
+
 function ending3() {
   background(232, 19, 211);
   image(img2, 0, 0);
@@ -1033,26 +840,6 @@ function ending3() {
   text("Press 1 to go to title page", width * 0.5, height * 0.95);
 }
 
-function scenario4c() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("5c", 220, 990);
-  text("5d ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
 function scenario5c() {
   background(255, 247, 189);
   image(img4, 0, 0);
@@ -1192,26 +979,6 @@ function ending4() {
   text("Press 1 to go to title page", width * 0.5, height * 0.95);
 }
 
-function scenario5d() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("6", 220, 990);
-  text("6 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
 function scenario6d() {
   background(255, 247, 189);
   image(img4, 0, 0);
@@ -1331,167 +1098,6 @@ function ending5() {
   text("Press 1 to go to title page", width * 0.5, height * 0.95);
 }
 
-function scenario6e() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("7", 220, 990);
-  text("7 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario7e() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("8", 220, 990);
-  text("8 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario8e() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("9", 220, 990);
-  text("9 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario9e() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("10", 220, 990);
-  text("10 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario10e() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("ending 6", 220, 990);
-  text("ending 6 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A void ", 235, 895);
-  text("B void ", 935, 895);
-}
-function ending6() {
-  background(232, 19, 211);
-  image(img2, 0, 0);
-  fill(255, 128, 128);
-  textSize(50);
-  textAlign(CENTER);
-  text("Theres... Nothing here? ", width * 0.5, height * 0.1);
-  text("The Void", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  //  text("Go home crying", 220, 890);
-  //  text("Cry at work", 920, 890);
-  //  rect(200, 750, 70, 70);
-  //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
-}
-
-function scenario9f() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("10", 220, 990);
-  text("10 ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function scenario10f() {
-  background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
-  textSize(50);
-  textAlign(CENTER);
-  text("ending 7", width * 0.5, height * 0.1);
-  text("ending 5", width * 0.5, height * 0.2);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  text("dead", 220, 990);
-  text("fired ", 920, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
-}
-function ending7() {
-}
 
 function artistStatement() {
   background(255, 247, 189);
