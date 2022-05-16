@@ -4,6 +4,8 @@ let gameState = "title";
 let canvas;
 let fr = 60;
 
+//hanbee17
+
 function preload() {
 
   heads = loadAnimation(
@@ -488,8 +490,8 @@ function scenario1() {
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("A = scenario2 ", 235, 895);
+  text("B = scenario2a", 935, 895);
 }
 function scenario2() {
   background(255, 247, 189);
@@ -698,19 +700,19 @@ function scenario2a() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("scenario2a", width * 0.5, height * 0.1);
+  text("scenario2a The boss tells you its time to start work", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("3a", 220, 990);
-  text("3b ", 920, 990);
+  text("3a Start working", 220, 990);
+  text("3b Go to the bathroom and play a little longer", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("A = scenario3a", 235, 895);
+  text("B = scenario3b", 935, 895);
 }
 function scenario3a() {
   background(255, 247, 189);
@@ -718,19 +720,19 @@ function scenario3a() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("The customer wants a refill on coffee", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("4a", 220, 990);
-  text("4b ", 920, 990);
+  text("4a Get him the coffee", 220, 990);
+  text("4b Ignore him", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("A Scenario 4a", 235, 895);
+  text("B Scenario 4b ", 935, 895);
 }
 function scenario4a() {
   background(255, 247, 189);
@@ -738,19 +740,19 @@ function scenario4a() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Boss leaves you in charge of new coworker", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("5a", 220, 990);
-  text("5b ", 920, 990);
+  text("5a Teach him the way you were taught", 220, 990);
+  text("5b Be lazy and tell him some generic stuff that he knew", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("A Scenario 5a", 235, 895);
+  text("B Scenario 5b", 935, 895);
 }
 function scenario5a() {
   background(255, 247, 189);
@@ -758,19 +760,19 @@ function scenario5a() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Its breaktime", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("6a", 220, 990);
-  text("6b ", 920, 990);
+  text("Eat lunch", 220, 990);
+  text("Keep working ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("A scenario 6a", 235, 895);
+  text("B scenario 6b", 935, 895);
 }
 function scenario6a() {
   background(255, 247, 189);
@@ -778,13 +780,13 @@ function scenario6a() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Customer doesn't know what to order", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("7a", 220, 990);
-  text("7b ", 920, 990);
+  text("Reccomend him something good  ", 220, 990);
+  text("7b Tell him to ask someone else", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -937,19 +939,19 @@ function scenario5b() {
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
-  text("You drop and break a wine glass", width * 0.5, height * 0.1);
+  text("Its breaktime", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("6b", 220, 990);
-  text("6c ", 920, 990);
+  text("Eat lunch", 220, 990);
+  text("Keep working ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
+  text("A scenario 6b", 235, 895);
+  text("B scenario 6c", 935, 895);
 }
 function scenario6b() {
   background(255, 247, 189);
