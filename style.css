@@ -9,3 +9,35 @@ canvas {
   margin-right: auto;
   border-radius: 20px
 }
+
+.artistStatement{
+  position: relative;
+  text-align: center;
+  padding: 4rem;
+  margin: auto;
+}
+
+#statement{
+    font-family: 'Montserrat', sans-serif;
+    color:#cfcfcf;
+    font-size:32px;
+    font-weight:bold;
+    margin: auto 35%;
+    position: relative;
+}
+.backbutton {
+background:    grey;
+border-radius: 11px;
+margin: 50px;
+padding:       20px 45px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 26px/1 "Open Sans", sans-serif;
+text-align:    center;
+text-decoration: none;
+}
+
+h1{
+color: #ffffff;
+text-align: center;
+}

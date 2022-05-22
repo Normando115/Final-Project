@@ -69,9 +69,7 @@ function draw() {
     case "instructions":
       instructionScreen();
       break;
-    case "bossScreen":
-      bossScreen();
-      break;
+
     case "scenario1":
       scenario1();
       break;
@@ -312,24 +310,22 @@ function draw() {
     case "scenario10g":
       scenario10g();
       break;
-    case "gameOver":
-      gameOver();
+
+    case "ending1":
+      ending1();
       break;
-      case "ending1":
-        ending1();
-        break;
-        case "ending2":
-          ending2();
-          break;
-          case "ending3":
-            ending3();
-            break;
-            case "ending4":
-              ending4();
-              break;
-              case "ending5":
-                ending5();
-                break;
+    case "ending2":
+      ending2();
+      break;
+    case "ending3":
+      ending3();
+      break;
+    case "ending4":
+      ending4();
+      break;
+    case "ending5":
+      ending5();
+      break;
     case "artistStatement":
       artistStatement();
       break;
@@ -345,17 +341,7 @@ function keyReleased() {
       gameState = "instructions";
     }
   }
-  //Boss head explosion
-  // A or B to continue
-  else if (gameState === "bossScreen") {
-    if (key === "a" || key === "A") {
-      gameState = "gameOver";
-    } else if (key === "b" || key === "B") {
-      gameState = "gameOver";
-    }
-  }
-  // Click A to finish Instructions
-  //instructions
+
   else if (gameState === "instructions") {
     if (key === "a" || key === "A") {
       gameState = "scenario1";
@@ -389,200 +375,224 @@ function keyReleased() {
       gameState = 'ending5';
     }
   }
-    // Select A or B to continue to stage 5
-    //stage4
-    else if (gameState === "scenario4") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario5';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario5a';
-      }
-    }
-    // Select A or B to continue to stage 6
-    //stage5
-    else if (gameState === "scenario5") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario6';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario6a';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario6") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario7';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario7b';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario7") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario8';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'ending5';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario8") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario9';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario9b';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario9") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario10';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario10a';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario10") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'ending1';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'ending5';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario2a") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario3a';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario3b';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario3a") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario4a';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario4b';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario4a") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario5';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario5b';
-      }
-    }
-
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario10a") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'ending2';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'ending3';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario3b") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario4b';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'ending5';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario4b") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario5b';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario5c';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario5b") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario6b';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario6c';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario6b") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario7b';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'scenario7c';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario7b") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'scenario8b';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'ending5';
-      }
-    }
-    // Select A or B to continue to stage 7
-    //stage6
-    else if (gameState === "scenario8b") {
-      if (key === 'a' || key === 'A') {
-        gameState = 'ending2';
-      } else if (key === 'b' || key === 'B') {
-        gameState = 'ending3';
-      }
-    }
-
-  // Game Over Screen
-  // Press r to restart and 1 to go to title screen
-  else if (gameState === "gameOver") {
-    if (key === 'r' || key === 'R') {
-      gameState = 'lvl1';
-    } else if (key === '1') {
-      gameState = 'title';
-    }
-  } else if (gameState === "ending1") {
+  // Select A or B to continue to stage 5
+  //stage4
+  else if (gameState === "scenario4") {
     if (key === 'a' || key === 'A') {
-      gameState = 'artistStatement';
+      gameState = 'scenario5';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario5a';
+    }
+  }
+  // Select A or B to continue to stage 6
+  //stage5
+  else if (gameState === "scenario5") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario6';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario6a';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario6") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario7';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario7b';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario7") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario8';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending5';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario8") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario9';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario8b';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario9") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario10';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario10a';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario10") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'ending1';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending5';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario2a") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario3a';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario3b';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario3a") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario4a';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario4b';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario4a") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario5';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario5b';
+    }
+  }
+
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario10a") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'ending2';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending3';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario3b") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario4b';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending5';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario4b") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario5b';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario5c';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario5b") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario6b';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario6c';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario6b") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario7b';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario7c';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario7b") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario8b';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending5';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario8b") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'ending2';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending3';
+    }
+  }
+  else if (gameState === "scenario5c") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario6c';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario6c';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario6c") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario7c';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario7d';
+    }
+  }
+  // Select A or B to continue to stage 7
+  //stage6
+  else if (gameState === "scenario7c") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'ending3';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'ending5';
+    }
+  }
+  else if (gameState === "scenario7d") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'scenario8d';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario7c';
+    }
+  }
+  else if (gameState === "scenario8d") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'ending4';
+    } else if (key === 'b' || key === 'B') {
+      gameState = 'scenario7c';
+    }
+  }
+ else if (gameState === "ending1") {
+    if (key === 'a' || key === 'A') {
+      gameState = 'title';
     } else if (key === '1') {
       gameState = 'title';
     }
   } else if (gameState === "ending2") {
     if (key === 'a' || key === 'A') {
-      gameState = 'artistStatement';
+      gameState = 'title';
     } else if (key === '1') {
       gameState = 'title';
     }
   } else if (gameState === "ending3") {
     if (key === 'a' || key === 'A') {
-      gameState = 'artistStatement';
+      gameState = 'title';
     } else if (key === '1') {
       gameState = 'title';
     }
   } else if (gameState === "ending4") {
     if (key === 'a' || key === 'A') {
-      gameState = 'artistStatement';
+      gameState = 'title';
     } else if (key === '1') {
       gameState = 'title';
     }
   } else if (gameState === "ending5") {
-    if (key === 'a' || key === 'A') {
-      gameState = 'artistStatement';
-    } else if (key === '1') {
-      gameState = 'title';
-    }
-  } else if (gameState === "artistStatement") {
     if (key === 'a' || key === 'A') {
       gameState = 'title';
     } else if (key === '1') {
@@ -602,23 +612,7 @@ function titleScreen() {
   text('Press A To Start Game', width * 0.5, height * 0.95);
 }
 
-function bossScreen() {
-  background(50, 40, 60);
-  animation(heads, 640, 512);
-  textSize(50);
-  fill(24, 217, 50);
-  text("You have failed the boss' expectations ", width * 0.15, height * 0.1);
-  textSize(25);
-  text("continue", 180, 990);
-  text("continue ", 880, 990);
-  fill(24, 217, 50);
-  rect(200, 850, 70, 70);
-  rect(900, 850, 70, 70);
-  fill(175, 21, 209);
-  text("A ", 235, 895);
-  text("B ", 935, 895);
 
-}
 
 
 function instructionScreen() {
@@ -629,33 +623,18 @@ function instructionScreen() {
   textAlign(CENTER);
   text("Instructions", width * 0.5, height * 0.1);
 
-  text("You are a bus boy at *Insert your favorite Restaurant* and the boss has a big temper.", width * 0.5, height * 0.3);
-  text("You are given two choices and you must choose the one ", width * 0.5, height * 0.35)
-  text("that you think will not make your boss angry to keep your job.", width * 0.5, height * 0.4)
-  text("If you make him angry, his head will explode and you will lose your job", width * 0.5, height * 0.45)
+  text("You are a bus boy at *Insert your favorite Restaurant* and the boss does not like you.", width * 0.5, height * 0.3);
+  text("You will be given scenarios and how you decide to play will ", width * 0.5, height * 0.35)
+  text(" determine where you will end up in this SIMPLE life of a busboy.", width * 0.5, height * 0.4)
+  text("There are 5 endings so get out there and try to get em all(or don't).", width * 0.5, height * 0.45)
+  textSize(48);
+    text("Good Luck and Have Fun", width * 0.5, height * 0.6)
+    textSize(30);
   text("Press A to go to work", width * 0.5, height * 0.8)
 
 }
 
-function gameOver() {
-  background(232, 19, 211);
-  image(img1, 0, 0);
-  fill(255, 128, 128);
-  textSize(50);
-  textAlign(CENTER);
-  //  text("The boss fires you for making him very angry", width * 0.5, height * 0.1);
-  //  text("This is GameOver", width * 0.5, height * 0.2);
-  // text("What do you do", width * 0.5, height * 0.3);
-  textSize(25);
-  textAlign(CENTER);
-  noStroke();
-  //  text("Go home crying", 220, 890);
-  //  text("Cry at work", 920, 890);
-  //  rect(200, 750, 70, 70);
-  //  rect(900, 750, 70, 70);
-  text("Press R to restart", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
-}
+
 
 function scenario1() {
   background(232, 19, 211);
@@ -889,33 +868,87 @@ function ending1() {
 }
 
 function scenario2a() {
-  background(255, 247, 189);
+  background(232, 19, 211);
+  image(img3, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
   text("scenario2a The boss tells you its time to start work", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
   text("3a Start working", 220, 990);
   text("3b Go to the bathroom and play a little longer", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
   text("A = scenario3a", 235, 895);
   text("B = scenario3b", 935, 895);
 }
 
 function scenario3a() {
-  background(255, 247, 189);
+  background(232, 19, 211);
+  image(img3, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
   text("The customer wants a refill on coffee", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
   text("4a Get him the coffee", 220, 990);
   text("4b Ignore him", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
   text("A Scenario 4a", 235, 895);
   text("B Scenario 4b ", 935, 895);
 }
 
 function scenario4a() {
-  background(255, 247, 189);
+  background(232, 19, 211);
+  image(img3, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
   text("Boss leaves you in charge of new coworker", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
   text("5a Teach him properly", 220, 990);
   text("5b tell another coworker to do it ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
   text("A Scenario 5a", 235, 895);
   text("B Scenario 5b", 935, 895);
+}
+
+function scenario10a() {
+  background(232, 19, 211);
+  image(img3, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("The boss wants some food recommendantions ", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Uh i like the kids menu", 220, 990);
+  text("May I suggest the (Insert Fancy Food)", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
 }
 
 function ending2() {
@@ -950,424 +983,303 @@ function scenario3b() {
   noStroke();
   text("4b", 220, 990);
   text("fired", 920, 990);
-    fill(24, 217, 50); rect(200, 850, 70, 70); rect(900, 850, 70, 70); fill(175, 21, 209); text("A ", 235, 895); text("B keep playing on phone", 935, 895);
-  }
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B keep playing on phone", 935, 895);
+}
 
-  function scenario4b() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You are told to bring food to tables instead of cleaning tables", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("You are now a runner", 220, 990);
-    text("Nope I only clean ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario4b() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("You are told to bring food to tables instead of cleaning tables", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("You are now a runner", 220, 990);
+  text("Nope I only clean ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function scenario5b() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("Food looks good", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("Wait until break", 220, 990);
-    text("eat it ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A scenario 6b", 235, 895);
-    text("B scenario 6c", 935, 895);
-  }
+function scenario5b() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("Food looks good", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Wait until break", 220, 990);
+  text("eat it ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A scenario 6b", 235, 895);
+  text("B scenario 6c", 935, 895);
+}
 
-  function scenario6b() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("Breaktime", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("eat", 220, 990);
-    text("work ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario6b() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("Breaktime", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("eat", 220, 990);
+  text("work ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function scenario7b() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("Customer drops all his food after paying", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("Laugh", 220, 990);
-    text("Tell chef to make more ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario7b() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("Customer drops all his food after paying", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Laugh", 220, 990);
+  text("Tell chef to make more ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function scenario8b() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("Restaurant is closing ", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("Close restaurant", 220, 990);
-    text("Leave its not your restaurant", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario8b() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("Restaurant is closing ", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Close restaurant", 220, 990);
+  text("Leave its not your restaurant", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function ending3() {
-    background(232, 19, 211);
-    image(img2, 0, 0);
-    fill(255, 128, 128);
-    textSize(50);
-    textAlign(CENTER);
-    text("Stuck like this ", width * 0.5, height * 0.1);
-    text("You will forever be nothing but a buser", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    //  text("Go home crying", 220, 890);
-    //  text("Cry at work", 920, 890);
-    //  rect(200, 750, 70, 70);
-    //  rect(900, 750, 70, 70);
-    text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-    text("Press 1 to go to title page", width * 0.5, height * 0.95);
-  }
+function ending3() {
+  background(232, 19, 211);
+  image(img2, 0, 0);
+  fill(255, 128, 128);
+  textSize(50);
+  textAlign(CENTER);
+  text("Stuck like this ", width * 0.5, height * 0.1);
+  text("You will forever be nothing but a buser", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  //  text("Go home crying", 220, 890);
+  //  text("Cry at work", 920, 890);
+  //  rect(200, 750, 70, 70);
+  //  rect(900, 750, 70, 70);
+  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
+  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+}
 
-  function scenario5c() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("6", 220, 990);
-    text("6 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario5c() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("A table is dirty", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("", 220, 990);
+  text("6 ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A Clean it ", 235, 895);
+  text("B Clean it later? ", 935, 895);
+}
 
-  function scenario6c() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("7", 220, 990);
-    text("7 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario6c() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("You are sent to organize the storage room", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Explore", 220, 990);
+  text("Clean and leave ", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function scenario7c() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("8", 220, 990);
-    text("8 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario7c() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("Someone throws up in the cafe", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Go home", 220, 990);
+  text(" Sigh", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function scenario8c() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("9", 220, 990);
-    text("9 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function ending4() {
+  background(232, 19, 211);
+  image(img2, 0, 0);
+  fill(255, 128, 128);
+  textSize(50);
+  textAlign(CENTER);
+  text("WHAT ARE YOU DOING HERE ", width * 0.5, height * 0.1);
+  text("Oh no, you found out this is a simulation", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  //  text("Go home crying", 220, 890);
+  //  text("Cry at work", 920, 890);
+  //  rect(200, 750, 70, 70);
+  //  rect(900, 750, 70, 70);
+  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
+  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+}
 
-  function scenario9c() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("10", 220, 990);
-    text("10 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario7d() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("What are you doing", width * 0.5, height * 0.1);
+  text("No employees allowed", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("keep going", 220, 990);
+  text(" Oops wrong door", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function scenario10c() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("ending4", 220, 990);
-    text("ending3 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
+function scenario8d() {
+  background(255, 247, 189);
+  image(img4, 0, 0);
+  fill(112, 17, 153);
+  textSize(50);
+  textAlign(CENTER);
+  text("Another door", width * 0.5, height * 0.1);
+  text("What do you do", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  text("Might as well keep goin", 220, 990);
+  text(" Bad idea so ill leave", 920, 990);
+  fill(24, 217, 50);
+  rect(200, 850, 70, 70);
+  rect(900, 850, 70, 70);
+  fill(175, 21, 209);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
+}
 
-  function ending4() {
-    background(232, 19, 211);
-    image(img2, 0, 0);
-    fill(255, 128, 128);
-    textSize(50);
-    textAlign(CENTER);
-    text("WHAT ARE YOU DOING HERE ", width * 0.5, height * 0.1);
-    text("Oh no, you found out this is a simulation", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    //  text("Go home crying", 220, 890);
-    //  text("Cry at work", 920, 890);
-    //  rect(200, 750, 70, 70);
-    //  rect(900, 750, 70, 70);
-    text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-    text("Press 1 to go to title page", width * 0.5, height * 0.95);
-  }
-
-  function scenario6d() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("7", 220, 990);
-    text("7 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
-
-  function scenario7d() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("8", 220, 990);
-    text("8 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
-
-  function scenario8d() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("9", 220, 990);
-    text("9 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
-
-  function scenario9d() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("10", 220, 990);
-    text("10 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A ", 235, 895);
-    text("B ", 935, 895);
-  }
-
-  function scenario10d() {
-    background(255, 247, 189);
-    image(img4, 0, 0);
-    fill(112, 17, 153);
-    textSize(50);
-    textAlign(CENTER);
-    text("You drop and break a wine glass", width * 0.5, height * 0.1);
-    text("What do you do", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("ending 5", 220, 990);
-    text("ending 3 ", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-    fill(175, 21, 209);
-    text("A fired", 235, 895);
-    text("B forever a buser", 935, 895);
-  }
-
-  function ending5() {
-    background(232, 19, 211);
-    image(img2, 0, 0);
-    fill(255, 128, 128);
-    textSize(50);
-    textAlign(CENTER);
-    text("How did this happen... ", width * 0.5, height * 0.1);
-    text("FIRED", width * 0.5, height * 0.2);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    //  text("Go home crying", 220, 890);
-    //  text("Cry at work", 920, 890);
-    //  rect(200, 750, 70, 70);
-    //  rect(900, 750, 70, 70);
-    text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-    text("Press 1 to go to title page", width * 0.5, height * 0.95);
-  }
+function ending5() {
+  background(232, 19, 211);
+  image(img2, 0, 0);
+  fill(255, 128, 128);
+  textSize(50);
+  textAlign(CENTER);
+  text("How did this happen... ", width * 0.5, height * 0.1);
+  text("FIRED", width * 0.5, height * 0.2);
+  textSize(25);
+  textAlign(CENTER);
+  noStroke();
+  //  text("Go home crying", 220, 890);
+  //  text("Cry at work", 920, 890);
+  //  rect(200, 750, 70, 70);
+  //  rect(900, 750, 70, 70);
+  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
+  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+}
 
 
-  function artistStatement() {
-    background(255, 247, 189);
-    fill(0);
-    textSize(25);
-    textAlign(CENTER);
-    textStyle(BOLD);
-    text("Artist Statement ", width * 0.5, height * 0.1);
-    textStyle(NORMAL);
-    text("This project is based on my experience working at a restaurant as a busser.  ", width * 0.5, height * 0.2);
-    text("It was made to emulate an buser at a restaurant and what you should and should not do.", width * 0.5, height * 0.3);
-    text("The goal of the game is to make sure you are making the right choices and not get fired.", width * 0.5, height * 0.4);
-    text("The reason I chose to make a game about my experience at a restaurant is because it was ", width * 0.5, height * 0.5);
-    text("where this or that happens so I thought that I should make a game of that reality instead of actually ", width * 0.5, height * 0.6);
-    text("something I genuinely enjoyed and sometimes when I worked there, I would imagine these scenarios ", width * 0.5, height * 0.7);
-    text("doing some of these things that could get my boss angry.", width * 0.5, height * 0.8);
-    textSize(25);
-    textAlign(CENTER);
-    noStroke();
-    text("Press A or 1 to play again", 220, 990);
-    text("WootWoot", 920, 990);
-    fill(24, 217, 50);
-    rect(200, 850, 70, 70);
-    rect(900, 850, 70, 70);
-  }
+//function artistStatement() {
+//  background(255, 247, 189);
+//  fill(0);
+//  textSize(25);
+//  textAlign(CENTER);
+//  textStyle(BOLD);
+//  text("Artist Statement ", width * 0.5, height * 0.1);
+//  textStyle(NORMAL);
+//  text("This project is based on my experience working at a restaurant as a busser.  ", width * 0.5, height * 0.2);
+//  text("It was made to emulate an buser at a restaurant and what you should and should not do.", width * 0.5, height * 0.3);
+//  text("The goal of the game is to make sure you are making the right choices and not get fired.", width * 0.5, height * 0.4);
+//  text("The reason I chose to make a game about my experience at a restaurant is because it was ", width * 0.5, height * 0.5);
+//  text("where this or that happens so I thought that I should make a game of that reality instead of actually ", width * 0.5, height * 0.6);
+//  text("something I genuinely enjoyed and sometimes when I worked there, I would imagine these scenarios ", width * 0.5, height * 0.7);
+//  text("doing some of these things that could get my boss angry.", width * 0.5, height * 0.8);
+//  textSize(25);
+//  textAlign(CENTER);
+//  noStroke();
+//  text("Press A or 1 to play again", 220, 990);
+//  text("WootWoot", 920, 990);
+//  fill(24, 217, 50);
+//  rect(200, 850, 70, 70);
+//  rect(900, 850, 70, 70);
+//}
