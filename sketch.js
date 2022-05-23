@@ -15,10 +15,6 @@ function preload() {
     "assets/boss6.jpg",
 
 
-
-
-
-
   );
   endinganimation3 = loadAnimation(
     "assets/buser1.jpg",
@@ -88,6 +84,10 @@ function preload() {
   img21 = loadImage('assets/scenario7d.jpg');
   img22 = loadImage('assets/scenario8d.jpg');
   img23 = loadImage('assets/Ending2.jpg');
+  img24 = loadImage('assets/scenario8.jpg');
+  img25 = loadImage('assets/scenario9.jpg');
+  img26 = loadImage('assets/scenario10.jpg');
+  img27 = loadImage('assets/scenario10a.jpg');
 }
 
 function setup() {
@@ -204,8 +204,6 @@ function draw() {
 
 function keyReleased() {
 
-  // Click A to start game
-  //title
   if (gameState === "title") {
     if (key === "a" || key === "A") {
       gameState = "instructions";
@@ -214,216 +212,148 @@ function keyReleased() {
     if (key === "a" || key === "A") {
       gameState = "scenario1";
     }
-  }
-  // Select A or B to continue to stage 2
-  //stage 1
-  else if (gameState === "scenario1") {
+  } else if (gameState === "scenario1") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario2';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario2a';
     }
-  }
-  // Select A or B to continue to stage 3
-  //stage 2
-  else if (gameState === "scenario2") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario2") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario3';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario3a';
     }
-  }
-
-  // Select A or B to continue to stage 4
-  //stage3
-  else if (gameState === "scenario3") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario3") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario4';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'ending5';
     }
-  }
-  // Select A or B to continue to stage 5
-  //stage4
-  else if (gameState === "scenario4") {
+  } else if (gameState === "scenario4") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario5';
     } else if (key === 'b' || key === 'B') {
-      gameState = 'scenario5a';
+      gameState = 'scenario3';
     }
-  }
-  // Select A or B to continue to stage 6
-  //stage5
-  else if (gameState === "scenario5") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario5") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario6';
-    } else if (key === 'b' || key === 'B') {
-      gameState = 'scenario6a';
+    } else if (key === 'a' || key === 'A') {
+      gameState = 'scenario7b';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario6") {
+  } else if (gameState === "scenario6") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario7';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario7b';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario7") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario7") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario8';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'ending5';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario8") {
+  } else if (gameState === "scenario8") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario9';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario8b';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario9") {
+  } else if (gameState === "scenario9") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario10';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario10a';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario10") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario10") {
+    if (key === 'b' || key === 'B') {
       gameState = 'ending1';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'ending5';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario2a") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario2a") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario3a';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario3b';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario3a") {
+  } else if (gameState === "scenario3a") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario4a';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario4b';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario4a") {
+  } else if (gameState === "scenario4a") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario5';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario5b';
     }
-  }
-
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario10a") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario10a") {
+    if (key === 'b' || key === 'B') {
       gameState = 'ending2';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'ending3';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario3b") {
+  } else if (gameState === "scenario3b") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario4b';
     } else if (key === 'b' || key === 'B') {
       gameState = 'ending5';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario4b") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario4b") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario5b';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario5c';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario5b") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario5b") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario6b';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario6c';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario6b") {
+  } else if (gameState === "scenario6b") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario7b';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario7c';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario7b") {
+  } else if (gameState === "scenario7b") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario8b';
     } else if (key === 'b' || key === 'B') {
       gameState = 'ending5';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario8b") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario8b") {
+    if (key === 'b' || key === 'B') {
       gameState = 'ending2';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'ending3';
     }
   } else if (gameState === "scenario5c") {
-    if (key === 'a' || key === 'A') {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario6c';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario6c';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario6c") {
-    if (key === 'a' || key === 'A') {
+  } else if (gameState === "scenario6c") {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario7c';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario7d';
     }
-  }
-  // Select A or B to continue to stage 7
-  //stage6
-  else if (gameState === "scenario7c") {
+  } else if (gameState === "scenario7c") {
     if (key === 'a' || key === 'A') {
       gameState = 'ending3';
     } else if (key === 'b' || key === 'B') {
       gameState = 'ending5';
     }
   } else if (gameState === "scenario7d") {
-    if (key === 'a' || key === 'A') {
+    if (key === 'b' || key === 'B') {
       gameState = 'scenario8d';
-    } else if (key === 'b' || key === 'B') {
+    } else if (key === 'a' || key === 'A') {
       gameState = 'scenario7c';
     }
   } else if (gameState === "scenario8d") {
@@ -476,9 +406,6 @@ function titleScreen() {
   text('Press A To Start Game', width * 0.5, height * 0.95);
 }
 
-
-
-
 function instructionScreen() {
   background(49, 29, 224);
   noStroke();
@@ -498,8 +425,6 @@ function instructionScreen() {
 
 }
 
-
-
 function scenario1() {
   background(232, 19, 211);
   image(img3, 0, 0);
@@ -511,14 +436,14 @@ function scenario1() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("play on your phone", 220, 990);
-  text("start working", 920, 990);
+  text("start working", 220, 990);
+  text("play on your phone", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A = scenario2 ", 235, 895);
-  text("B = scenario2a", 935, 895);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
 }
 
 function scenario2() {
@@ -532,8 +457,8 @@ function scenario2() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Clean it up", 220, 990);
-  text("Ignore it ", 920, 990);
+  text("Ignore it", 220, 990);
+  text("Clean it up ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -597,8 +522,8 @@ function scenario5() {
   textAlign(CENTER);
   noStroke();
   fill(112, 17, 153);
-  text("Restock normally", 220, 990);
-  text("Relax in restock room then restock normally", 920, 990);
+  text("Relax in restock room then restock normally", 220, 990);
+  text("Restock normally", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -618,8 +543,8 @@ function scenario6() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Sleep in manager's office", 220, 990);
-  text("Work normally", 920, 990);
+  text("Work normally", 220, 990);
+  text("Sleep in manager's office", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -639,8 +564,8 @@ function scenario7() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Tell manager", 220, 990);
-  text("Tell them to deal with it", 920, 990);
+  text("Tell them to deal with it", 220, 990);
+  text("Tell manager", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -651,7 +576,7 @@ function scenario7() {
 
 function scenario8() {
   background(255, 247, 189);
-  image(img9, 0, 0);
+  image(img24, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -672,7 +597,7 @@ function scenario8() {
 
 function scenario9() {
   background(255, 247, 189);
-  image(img9, 0, 0);
+  image(img25, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -693,7 +618,7 @@ function scenario9() {
 
 function scenario10() {
   background(255, 247, 189);
-  image(img9, 0, 0);
+  image(img26, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -702,8 +627,8 @@ function scenario10() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Kill the boss", 220, 990);
-  text("Return the katana", 920, 990);
+  text("Return the katana", 220, 990);
+  text("Kill the boss", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -741,8 +666,8 @@ function scenario2a() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Start working", 220, 990);
-  text("Go to the bathroom and play a little longer", 920, 990);
+  text("Go to the bathroom and play a little longer", 250, 990);
+  text("Start working", 920, 990);
   fill(227, 227, 227);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -795,7 +720,7 @@ function scenario4a() {
 
 function scenario10a() {
   background(232, 19, 211);
-  image(img3, 0, 0);
+  image(img27, 0, 0);
   fill(227, 227, 227);
   textSize(50);
   textAlign(CENTER);
@@ -816,7 +741,7 @@ function scenario10a() {
 
 function ending2() {
   background(232, 19, 211);
-  img(img23, 640, 510);
+  image(img23, 0, 0);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -835,17 +760,18 @@ function ending2() {
 function scenario3b() {
   background(255, 247, 189);
   image(img13, 0, 0);
-  fill(227, 227, 227);
+  fill(25, 97, 227);
   textSize(50);
   textAlign(CENTER);
-  text("The boss doesnt want to fire you so he tells you to work at their other restaurant", width * 0.5, height * 0.1);
-  text("What do you do", width * 0.5, height * 0.2);
+  text("The boss doesnt want to fire you", width * 0.5, height * 0.1);
+  text("so he tells you to work at their other restaurant", width * 0.5, height * 0.2);
+  text("What do you do", width * 0.5, height * 0.3);
   textSize(25);
   textAlign(CENTER);
   noStroke();
   text("Go", 220, 990);
   text("keep playing", 920, 990);
-  fill(227, 227, 227);
+  fill(25, 97, 227);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
@@ -864,8 +790,8 @@ function scenario4b() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("You are now a runner", 220, 990);
-  text("Nope I only clean ", 920, 990);
+  text("Nope I only clean", 220, 990);
+  text("You are now a runner", 920, 990);
   fill(0);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -885,8 +811,8 @@ function scenario5b() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Wait until break", 220, 990);
-  text("Eat it ", 920, 990);
+  text("Eat it", 220, 990);
+  text("Wait until break", 920, 990);
   fill(50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -927,8 +853,8 @@ function scenario7b() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Laugh", 220, 990);
-  text("Tell chef to make more ", 920, 990);
+  text("Tell chef to make more", 220, 990);
+  text("Laugh", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -948,8 +874,8 @@ function scenario8b() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Close restaurant", 220, 990);
-  text("Leave its not your restaurant", 920, 990);
+  text("Leave its not your restaurant", 220, 990);
+  text("Close restaurant", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -960,7 +886,7 @@ function scenario8b() {
 
 function ending3() {
   background(232, 19, 211);
-  animation(endinganimation3,0,0);
+  animation(endinganimation3, 640, 510);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -1030,8 +956,8 @@ function scenario7c() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Go home", 220, 990);
-  text(" Sigh", 920, 990);
+  text("Sigh", 220, 990);
+  text("Go home", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -1069,8 +995,8 @@ function scenario7d() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("keep going", 220, 990);
-  text(" Oops wrong door", 920, 990);
+  text("Oops wrong door", 220, 990);
+  text("Keep going", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -1091,7 +1017,7 @@ function scenario8d() {
   textAlign(CENTER);
   noStroke();
   text("Might as well keep goin", 220, 990);
-  text(" Bad idea so ill leave", 920, 990);
+  text("Bad idea so I'll leave", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
@@ -1111,36 +1037,5 @@ function ending5() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  //  text("Go home crying", 220, 890);
-  //  text("Cry at work", 920, 890);
-  //  rect(200, 750, 70, 70);
-  //  rect(900, 750, 70, 70);
-
   text("Press A to go to title page", width * 0.5, height * 0.95);
 }
-
-
-//function artistStatement() {
-//  background(255, 247, 189);
-//  fill(0);
-//  textSize(25);
-//  textAlign(CENTER);
-//  textStyle(BOLD);
-//  text("Artist Statement ", width * 0.5, height * 0.1);
-//  textStyle(NORMAL);
-//  text("This project is based on my experience working at a restaurant as a busser.  ", width * 0.5, height * 0.2);
-//  text("It was made to emulate an buser at a restaurant and what you should and should not do.", width * 0.5, height * 0.3);
-//  text("The goal of the game is to make sure you are making the right choices and not get fired.", width * 0.5, height * 0.4);
-//  text("The reason I chose to make a game about my experience at a restaurant is because it was ", width * 0.5, height * 0.5);
-//  text("where this or that happens so I thought that I should make a game of that reality instead of actually ", width * 0.5, height * 0.6);
-//  text("something I genuinely enjoyed and sometimes when I worked there, I would imagine these scenarios ", width * 0.5, height * 0.7);
-//  text("doing some of these things that could get my boss angry.", width * 0.5, height * 0.8);
-//  textSize(25);
-//  textAlign(CENTER);
-//  noStroke();
-//  text("Press A or 1 to play again", 220, 990);
-//  text("WootWoot", 920, 990);
-//  fill(24, 217, 50);
-//  rect(200, 850, 70, 70);
-//  rect(900, 850, 70, 70);
-//}

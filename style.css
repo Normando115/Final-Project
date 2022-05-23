@@ -18,7 +18,6 @@ canvas {
 }
 
 #statement{
-    font-family: 'Montserrat', sans-serif;
     color:#cfcfcf;
     font-size:32px;
     font-weight:bold;
@@ -32,7 +31,6 @@ margin: 50px;
 padding:       20px 45px;
 color:         #ffffff;
 display:       inline-block;
-font:          normal bold 26px/1 "Open Sans", sans-serif;
 text-align:    center;
 text-decoration: none;
 }
