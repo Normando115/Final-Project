@@ -6,7 +6,32 @@ let fr = 60;
 
 function preload() {
 
-  heads = loadAnimation(
+  endinganimation1 = loadAnimation(
+    "assets/boss1.jpg",
+    "assets/boss2.jpg",
+    "assets/boss3.jpg",
+    "assets/boss4.jpg",
+    "assets/boss5.jpg",
+    "assets/boss6.jpg",
+
+
+
+
+
+
+  );
+  endinganimation3 = loadAnimation(
+    "assets/buser1.jpg",
+    "assets/buser2.jpg",
+    "assets/buser3.jpg",
+  );
+  endinganimation4 = loadAnimation(
+    "assets/glitch1.jpg",
+    "assets/glitch2.jpg",
+    "assets/glitch3.jpg",
+    "assets/glitch4.jpg",
+  );
+  endinganimation5 = loadAnimation(
     "assets/head01.jpg",
     "assets/head01.jpg",
     "assets/head01.jpg",
@@ -36,16 +61,12 @@ function preload() {
     "assets/head07.jpg",
     "assets/head07.jpg",
     "assets/head07.jpg",
-    //    "assets/screen8.jpg",
-    //    "assets/screen9.jpg",
-    //    "assets/screen10.jpg",
-    //    "assets/screen11.jpg",
-    //    "assets/screen12.jpg"
+
   );
 
   img = loadImage('assets/screen1.jpg');
-  img1 = loadImage('assets/screen2.jpg');
-  img2 = loadImage('assets/screen3.jpg');
+  img1 = loadImage('assets/gameover.jpg');
+  //  img2 = loadImage('assets/screen3.jpg');
   img3 = loadImage('assets/scenario1.jpg');
   img4 = loadImage('assets/scenario2.jpg');
   img5 = loadImage('assets/scenario3.jpg');
@@ -53,6 +74,20 @@ function preload() {
   img7 = loadImage('assets/scenario5.jpg');
   img8 = loadImage('assets/scenario6.jpg');
   img9 = loadImage('assets/scenario7.jpg');
+  img10 = loadImage('assets/scenario2a.jpg');
+  img11 = loadImage('assets/scenario3a.jpg');
+  img12 = loadImage('assets/scenario4a.jpg');
+  img13 = loadImage('assets/scenario3b.jpg');
+  img14 = loadImage('assets/scenario4b.jpg');
+  img15 = loadImage('assets/scenario5b.jpg');
+  img16 = loadImage('assets/scenario7b.jpg');
+  img17 = loadImage('assets/scenario8b.jpg');
+  img18 = loadImage('assets/scenario5c.jpg');
+  img19 = loadImage('assets/scenario6c.jpg');
+  img20 = loadImage('assets/scenario7c.jpg');
+  img21 = loadImage('assets/scenario7d.jpg');
+  img22 = loadImage('assets/scenario8d.jpg');
+  img23 = loadImage('assets/Ending2.jpg');
 }
 
 function setup() {
@@ -100,9 +135,6 @@ function draw() {
     case "scenario10":
       scenario10();
       break;
-    case "scenario1a":
-      scenario1a();
-      break;
     case "scenario2a":
       scenario2a();
       break;
@@ -112,29 +144,8 @@ function draw() {
     case "scenario4a":
       scenario4a();
       break;
-    case "scenario5a":
-      scenario5a();
-      break;
-    case "scenario6a":
-      scenario6a();
-      break;
-    case "scenario7a":
-      scenario7a();
-      break;
-    case "scenario8a":
-      scenario8a();
-      break;
-    case "scenario9a":
-      scenario9a();
-      break;
     case "scenario10a":
       scenario10a();
-      break;
-    case "scenario1b":
-      scenario1b();
-      break;
-    case "scenario2b":
-      scenario2b();
       break;
     case "scenario3b":
       scenario3b();
@@ -154,24 +165,6 @@ function draw() {
     case "scenario8b":
       scenario8b();
       break;
-    case "scenario9b":
-      scenario9b();
-      break;
-    case "scenario10b":
-      scenario10b();
-      break;
-    case "scenario1c":
-      scenario1c();
-      break;
-    case "scenario2c":
-      scenario2c();
-      break;
-    case "scenario3c":
-      scenario3c();
-      break;
-    case "scenario4c":
-      scenario4c();
-      break;
     case "scenario5c":
       scenario5c();
       break;
@@ -181,134 +174,11 @@ function draw() {
     case "scenario7c":
       scenario7c();
       break;
-    case "scenario8c":
-      scenario8c();
-      break;
-    case "scenario9c":
-      scenario9c();
-      break;
-    case "scenario10c":
-      scenario10c();
-      break;
-    case "scenario1d":
-      scenario1d();
-      break;
-    case "scenario2d":
-      scenario2d();
-      break;
-    case "scenario3d":
-      scenario3d();
-      break;
-    case "scenario4d":
-      scenario4d();
-      break;
-    case "scenario5d":
-      scenario5d();
-      break;
-    case "scenario6d":
-      scenario6d();
-      break;
     case "scenario7d":
       scenario7d();
       break;
     case "scenario8d":
       scenario8d();
-      break;
-    case "scenario9d":
-      scenario9d();
-      break;
-    case "scenario10d":
-      scenario10d();
-      break;
-    case "scenario1e":
-      scenario1e();
-      break;
-    case "scenario2e":
-      scenario2e();
-      break;
-    case "scenario3e":
-      scenario3e();
-      break;
-    case "scenario4e":
-      scenario4e();
-      break;
-    case "scenario5e":
-      scenario5e();
-      break;
-    case "scenario6e":
-      scenario6e();
-      break;
-    case "scenario7e":
-      scenario7e();
-      break;
-    case "scenario8e":
-      scenario8e();
-      break;
-    case "scenario9e":
-      scenario9e();
-      break;
-    case "scenario10e":
-      scenario10e();
-      break;
-    case "scenario1f":
-      scenario1f();
-      break;
-    case "scenario2f":
-      scenario2f();
-      break;
-    case "scenario3f":
-      scenario3f();
-      break;
-    case "scenario4f":
-      scenario4f();
-      break;
-    case "scenario5f":
-      scenario5f();
-      break;
-    case "scenario6f":
-      scenario6f();
-      break;
-    case "scenario7f":
-      scenario7f();
-      break;
-    case "scenario8f":
-      scenario8f();
-      break;
-    case "scenario9f":
-      scenario9f();
-      break;
-    case "scenario10f":
-      scenario10f();
-      break;
-    case "scenario1g":
-      scenario1g();
-      break;
-    case "scenario2g":
-      scenario2g();
-      break;
-    case "scenario3g":
-      scenario3g();
-      break;
-    case "scenario4g":
-      scenario4g();
-      break;
-    case "scenario5g":
-      scenario5g();
-      break;
-    case "scenario6g":
-      scenario6g();
-      break;
-    case "scenario7g":
-      scenario7g();
-      break;
-    case "scenario8g":
-      scenario8g();
-      break;
-    case "scenario9g":
-      scenario9g();
-      break;
-    case "scenario10g":
-      scenario10g();
       break;
 
     case "ending1":
@@ -326,8 +196,8 @@ function draw() {
     case "ending5":
       ending5();
       break;
-    case "artistStatement":
-      artistStatement();
+    case "gameover":
+      gameover();
       break;
   }
 }
@@ -340,9 +210,7 @@ function keyReleased() {
     if (key === "a" || key === "A") {
       gameState = "instructions";
     }
-  }
-
-  else if (gameState === "instructions") {
+  } else if (gameState === "instructions") {
     if (key === "a" || key === "A") {
       gameState = "scenario1";
     }
@@ -528,8 +396,7 @@ function keyReleased() {
     } else if (key === 'b' || key === 'B') {
       gameState = 'ending3';
     }
-  }
-  else if (gameState === "scenario5c") {
+  } else if (gameState === "scenario5c") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario6c';
     } else if (key === 'b' || key === 'B') {
@@ -553,22 +420,19 @@ function keyReleased() {
     } else if (key === 'b' || key === 'B') {
       gameState = 'ending5';
     }
-  }
-  else if (gameState === "scenario7d") {
+  } else if (gameState === "scenario7d") {
     if (key === 'a' || key === 'A') {
       gameState = 'scenario8d';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario7c';
     }
-  }
-  else if (gameState === "scenario8d") {
+  } else if (gameState === "scenario8d") {
     if (key === 'a' || key === 'A') {
       gameState = 'ending4';
     } else if (key === 'b' || key === 'B') {
       gameState = 'scenario7c';
     }
-  }
- else if (gameState === "ending1") {
+  } else if (gameState === "ending1") {
     if (key === 'a' || key === 'A') {
       gameState = 'title';
     } else if (key === '1') {
@@ -628,8 +492,8 @@ function instructionScreen() {
   text(" determine where you will end up in this SIMPLE life of a busboy.", width * 0.5, height * 0.4)
   text("There are 5 endings so get out there and try to get em all(or don't).", width * 0.5, height * 0.45)
   textSize(48);
-    text("Good Luck and Have Fun", width * 0.5, height * 0.6)
-    textSize(30);
+  text("Good Luck and Have Fun", width * 0.5, height * 0.6)
+  textSize(30);
   text("Press A to go to work", width * 0.5, height * 0.8)
 
 }
@@ -850,7 +714,7 @@ function scenario10() {
 
 function ending1() {
   background(232, 19, 211);
-  image(img2, 0, 0);
+  animation(endinganimation1, 640, 510);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -863,35 +727,34 @@ function ending1() {
   //  text("Cry at work", 920, 890);
   //  rect(200, 750, 70, 70);
   //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+  text("Press A to go to title screen", width * 0.5, height * 0.95);
 }
 
 function scenario2a() {
   background(232, 19, 211);
-  image(img3, 0, 0);
-  fill(112, 17, 153);
+  image(img10, 0, 0);
+  fill(227, 227, 227);
   textSize(50);
   textAlign(CENTER);
-  text("scenario2a The boss tells you its time to start work", width * 0.5, height * 0.1);
+  text(" The boss tells you its time to start work", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("3a Start working", 220, 990);
-  text("3b Go to the bathroom and play a little longer", 920, 990);
-  fill(24, 217, 50);
+  text("Start working", 220, 990);
+  text("Go to the bathroom and play a little longer", 920, 990);
+  fill(227, 227, 227);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A = scenario3a", 235, 895);
-  text("B = scenario3b", 935, 895);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
 }
 
 function scenario3a() {
   background(232, 19, 211);
-  image(img3, 0, 0);
-  fill(112, 17, 153);
+  image(img11, 0, 0);
+  fill(0);
   textSize(50);
   textAlign(CENTER);
   text("The customer wants a refill on coffee", width * 0.5, height * 0.1);
@@ -899,20 +762,20 @@ function scenario3a() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("4a Get him the coffee", 220, 990);
-  text("4b Ignore him", 920, 990);
-  fill(24, 217, 50);
+  text(" Get him the coffee", 220, 990);
+  text("Ignore him", 920, 990);
+  fill(227, 227, 227);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A Scenario 4a", 235, 895);
-  text("B Scenario 4b ", 935, 895);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
 }
 
 function scenario4a() {
   background(232, 19, 211);
-  image(img3, 0, 0);
-  fill(112, 17, 153);
+  image(img12, 0, 0);
+  fill(0);
   textSize(50);
   textAlign(CENTER);
   text("Boss leaves you in charge of new coworker", width * 0.5, height * 0.1);
@@ -920,30 +783,30 @@ function scenario4a() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("5a Teach him properly", 220, 990);
-  text("5b tell another coworker to do it ", 920, 990);
-  fill(24, 217, 50);
+  text(" Teach him properly", 220, 990);
+  text("Tell another coworker to do it ", 920, 990);
+  fill(25);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A Scenario 5a", 235, 895);
-  text("B Scenario 5b", 935, 895);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
 }
 
 function scenario10a() {
   background(232, 19, 211);
   image(img3, 0, 0);
-  fill(112, 17, 153);
+  fill(227, 227, 227);
   textSize(50);
   textAlign(CENTER);
-  text("The boss wants some food recommendantions ", width * 0.5, height * 0.1);
+  text("The boss wants some food recommendations ", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("Uh i like the kids menu", 220, 990);
+  text("Uh I like the kids menu", 220, 990);
   text("May I suggest the (Insert Fancy Food)", 920, 990);
-  fill(24, 217, 50);
+  fill(227, 227, 227);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
@@ -953,7 +816,7 @@ function scenario10a() {
 
 function ending2() {
   background(232, 19, 211);
-  image(img2, 0, 0);
+  img(img23, 640, 510);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -966,45 +829,44 @@ function ending2() {
   //  text("Cry at work", 920, 890);
   //  rect(200, 750, 70, 70);
   //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+  text("Press A to go to title page", width * 0.5, height * 0.95);
 }
 
 function scenario3b() {
   background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
+  image(img13, 0, 0);
+  fill(227, 227, 227);
   textSize(50);
   textAlign(CENTER);
-  text("The boss doesnt want fire you so he tells you to work at their other restaurant", width * 0.5, height * 0.1);
+  text("The boss doesnt want to fire you so he tells you to work at their other restaurant", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("4b", 220, 990);
-  text("fired", 920, 990);
-  fill(24, 217, 50);
+  text("Go", 220, 990);
+  text("keep playing", 920, 990);
+  fill(227, 227, 227);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
   text("A ", 235, 895);
-  text("B keep playing on phone", 935, 895);
+  text("B", 935, 895);
 }
 
 function scenario4b() {
   background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
+  image(img14, 0, 0);
+  fill(0);
   textSize(50);
   textAlign(CENTER);
-  text("You are told to bring food to tables instead of cleaning tables", width * 0.5, height * 0.1);
+  text("Boss says to bring food to tables instead of cleaning tables", width * 0.5, height * 0.1);
   text("What do you do", width * 0.5, height * 0.2);
   textSize(25);
   textAlign(CENTER);
   noStroke();
   text("You are now a runner", 220, 990);
   text("Nope I only clean ", 920, 990);
-  fill(24, 217, 50);
+  fill(0);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
@@ -1014,8 +876,8 @@ function scenario4b() {
 
 function scenario5b() {
   background(255, 247, 189);
-  image(img4, 0, 0);
-  fill(112, 17, 153);
+  image(img15, 0, 0);
+  fill(25);
   textSize(50);
   textAlign(CENTER);
   text("Food looks good", width * 0.5, height * 0.1);
@@ -1024,18 +886,18 @@ function scenario5b() {
   textAlign(CENTER);
   noStroke();
   text("Wait until break", 220, 990);
-  text("eat it ", 920, 990);
-  fill(24, 217, 50);
+  text("Eat it ", 920, 990);
+  fill(50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A scenario 6b", 235, 895);
-  text("B scenario 6c", 935, 895);
+  text("A ", 235, 895);
+  text("B ", 935, 895);
 }
 
 function scenario6b() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img6, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1056,7 +918,7 @@ function scenario6b() {
 
 function scenario7b() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img16, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1077,7 +939,7 @@ function scenario7b() {
 
 function scenario8b() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img17, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1098,7 +960,7 @@ function scenario8b() {
 
 function ending3() {
   background(232, 19, 211);
-  image(img2, 0, 0);
+  animation(endinganimation3,0,0);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -1111,13 +973,13 @@ function ending3() {
   //  text("Cry at work", 920, 890);
   //  rect(200, 750, 70, 70);
   //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+  text("Press A to go to title page", width * 0.5, height * 0.95);
+
 }
 
 function scenario5c() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img18, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1126,19 +988,19 @@ function scenario5c() {
   textSize(25);
   textAlign(CENTER);
   noStroke();
-  text("", 220, 990);
-  text("6 ", 920, 990);
+  text("Clean it", 220, 990);
+  text("Clean it later? ", 920, 990);
   fill(24, 217, 50);
   rect(200, 850, 70, 70);
   rect(900, 850, 70, 70);
   fill(175, 21, 209);
-  text("A Clean it ", 235, 895);
-  text("B Clean it later? ", 935, 895);
+  text("A ", 235, 895);
+  text("B  ", 935, 895);
 }
 
 function scenario6c() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img19, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1159,7 +1021,7 @@ function scenario6c() {
 
 function scenario7c() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img20, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1180,7 +1042,7 @@ function scenario7c() {
 
 function ending4() {
   background(232, 19, 211);
-  image(img2, 0, 0);
+  animation(endinganimation4, 640, 510);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -1193,13 +1055,12 @@ function ending4() {
   //  text("Cry at work", 920, 890);
   //  rect(200, 750, 70, 70);
   //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+  text("Press A to go to title page", width * 0.5, height * 0.95);
 }
 
 function scenario7d() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img21, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1220,7 +1081,7 @@ function scenario7d() {
 
 function scenario8d() {
   background(255, 247, 189);
-  image(img4, 0, 0);
+  image(img22, 0, 0);
   fill(112, 17, 153);
   textSize(50);
   textAlign(CENTER);
@@ -1241,7 +1102,7 @@ function scenario8d() {
 
 function ending5() {
   background(232, 19, 211);
-  image(img2, 0, 0);
+  animation(endinganimation5, 640, 510);
   fill(255, 128, 128);
   textSize(50);
   textAlign(CENTER);
@@ -1254,8 +1115,8 @@ function ending5() {
   //  text("Cry at work", 920, 890);
   //  rect(200, 750, 70, 70);
   //  rect(900, 750, 70, 70);
-  text("Press A to go to Artist Statement", width * 0.5, height * 0.9);
-  text("Press 1 to go to title page", width * 0.5, height * 0.95);
+
+  text("Press A to go to title page", width * 0.5, height * 0.95);
 }
 
 
