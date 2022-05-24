@@ -61,7 +61,6 @@ function preload() {
   );
 
   img = loadImage('assets/screen1.jpg');
-  img1 = loadImage('assets/gameover.jpg');
   //  img2 = loadImage('assets/screen3.jpg');
   img3 = loadImage('assets/scenario1.jpg');
   img4 = loadImage('assets/scenario2.jpg');
@@ -196,9 +195,7 @@ function draw() {
     case "ending5":
       ending5();
       break;
-    case "gameover":
-      gameover();
-      break;
+
   }
 }
 
